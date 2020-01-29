@@ -1,15 +1,12 @@
 package groove.explore;
 
-import abeona.NextFunction;
-import abeona.Query;
-import abeona.Transition;
-import abeona.frontiers.QueueFrontier;
-import abeona.heaps.HashSetHeap;
 import groove.explore.encode.*;
 import groove.explore.encode.Template.Template0;
 import groove.explore.encode.Template.Template1;
 import groove.explore.encode.Template.Template2;
 import groove.explore.encode.Template.TemplateN;
+import groove.explore.encode.abeona.EncodedRuleParameterBinding;
+import groove.explore.encode.abeona.RuleParameterBinding;
 import groove.explore.prettyparse.*;
 import groove.explore.result.EdgeBoundCondition;
 import groove.explore.result.IsRuleApplicableCondition;
@@ -18,8 +15,6 @@ import groove.explore.strategy.*;
 import groove.grammar.Rule;
 import groove.grammar.model.GrammarModel;
 import groove.grammar.type.TypeLabel;
-import groove.lts.GraphState;
-import groove.lts.GraphTransition;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -357,8 +352,8 @@ public enum StrategyValue implements ParsableValue {
                     }
                 };
             case MINIMAX:
-                return new MyTemplate5<Integer, Integer, List<Rule>, Rule, Integer>(new PSequence(new PNumber(
-                        "heuristic-parameter-index"),
+                return new MyTemplate5<Integer, Integer, List<Rule>, Rule, Integer>(new PSequence(
+                        new PNumber("heuristic-parameter-index"),
                         new PLiteral(","),
                         new PNumber("maximum-search-depth"),
                         new PLiteral(","),
@@ -393,11 +388,21 @@ public enum StrategyValue implements ParsableValue {
                     }
                 };
 
+                /*
+                *
             case ABEONA:
-                return new MyTemplate0() {
+                return new MyTemplate1<>(new PAll("query"), "query", new EncodedAbeonaQuery()) {
                     @Override
-                    public Strategy create() {
-                        return new AbeonaStrategy();
+                    public Strategy create(Query<GraphState> query) {
+                        return new AbeonaStrategy(query);
+                    }
+                };
+                * */
+            case ABEONA:
+                return new MyTemplate1<>(new PIdentifier("query"), "query", new EncodedRuleParameterBinding()) {
+                    @Override
+                    public Strategy create(RuleParameterBinding rule) {
+                        return new AbeonaStrategy(rule);
                     }
                 };
 
