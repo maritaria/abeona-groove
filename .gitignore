@@ -1,3 +1,4 @@
 /out/
-/grammars/
 /.idea/
+/grammars/*
+!/grammars/staircase.gps/

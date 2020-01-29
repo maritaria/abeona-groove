@@ -1,0 +1,17 @@
+recipe use-builder() {
+	builder.startup;
+	alap builder.next;
+	builder.finish;
+}
+
+if (builder.present) {
+	use-builder();
+}
+
+alap builder.add-missing;
+
+function step() {
+	choice { bot.x-ascend(5); } or { bot.descend(3); }
+}
+
+alap { step(); }
