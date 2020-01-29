@@ -27,7 +27,10 @@ public enum StrategyValue implements ParsableValue {
     /**
      * Abeona strategy.
      */
-    ABEONA("abeona", "Abeona strategy", "Execute the pre-defined strategy with abeona."),
+    ABEONA(
+            "abeona",
+            "Abeona strategy",
+            "Execute the pre-defined strategy with abeona. \n visit-cost: The rule that generates for every state the cost to visit it, exploration continues with the lowest costing state first"),
     /**
      * Standard breadth-first strategy.
      */
@@ -399,7 +402,7 @@ public enum StrategyValue implements ParsableValue {
                 };
                 * */
             case ABEONA:
-                return new MyTemplate1<>(new PIdentifier("query"), "query", new EncodedRuleParameterBinding()) {
+                return new MyTemplate1<>(new PIdentifier("visit-cost"), "visit-cost", new EncodedRuleParameterBinding()) {
                     @Override
                     public Strategy create(RuleParameterBinding rule) {
                         return new AbeonaStrategy(rule);
