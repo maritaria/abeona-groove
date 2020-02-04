@@ -21,11 +21,12 @@ public class POptionalExtension implements SerializedParser {
      * Creates a POptionalExtension
      *
      * @param trigger      - The literal string which will cause the extension to be read
-     * @param argumentName - The argument to append the trigger literal to or null if you don't want it appended
+     * @param argumentName - The argument to append the trigger literal to
      * @param extension    - The SerializedParser to invoke if the specified trigger was read from the input
      */
     public POptionalExtension(String trigger, String argumentName, SerializedParser extension) {
         Objects.requireNonNull(trigger, "trigger");
+        Objects.requireNonNull(argumentName, "argumentName");
         Objects.requireNonNull(extension, "extension");
         this.trigger = trigger;
         this.argumentName = argumentName;
@@ -35,9 +36,7 @@ public class POptionalExtension implements SerializedParser {
     @Override
     public boolean parse(StringConsumer stream, Serialized serialized) {
         if (stream.consumeLiteral(trigger)) {
-            if (argumentName != null) {
-                serialized.appendArgument(argumentName, trigger);
-            }
+            serialized.appendArgument(argumentName, trigger);
             return extension.parse(stream, serialized);
         } else {
             return true;
@@ -51,8 +50,10 @@ public class POptionalExtension implements SerializedParser {
 
     @Override
     public String toParsableString(Serialized source) {
-        final var extensionString = this.extension.toParsableString(source);
-        if (extensionString != null && !extensionString.isEmpty()) {
+        String value = source.getArgument(argumentName);
+        if (value.startsWith(trigger)) {
+            source.setArgument(argumentName, value.substring(trigger.length()));
+            final var extensionString = this.extension.toParsableString(source);
             return trigger + extensionString;
         } else {
             return "";
