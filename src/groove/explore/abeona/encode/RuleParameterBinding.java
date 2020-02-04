@@ -1,4 +1,4 @@
-package groove.explore.encode.abeona;
+package groove.explore.abeona.encode;
 
 import groove.grammar.Rule;
 

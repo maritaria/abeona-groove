@@ -5,8 +5,7 @@ import groove.explore.encode.Template.Template0;
 import groove.explore.encode.Template.Template1;
 import groove.explore.encode.Template.Template2;
 import groove.explore.encode.Template.TemplateN;
-import groove.explore.encode.abeona.EncodedRuleParameterBinding;
-import groove.explore.encode.abeona.RuleParameterBinding;
+import groove.explore.abeona.AbeonaStrategyTemplate;
 import groove.explore.prettyparse.*;
 import groove.explore.result.EdgeBoundCondition;
 import groove.explore.result.IsRuleApplicableCondition;
@@ -392,7 +391,6 @@ public enum StrategyValue implements ParsableValue {
                 };
 
                 /*
-                *
             case ABEONA:
                 return new MyTemplate1<>(new PAll("query"), "query", new EncodedAbeonaQuery()) {
                     @Override
@@ -400,14 +398,9 @@ public enum StrategyValue implements ParsableValue {
                         return new AbeonaStrategy(query);
                     }
                 };
-                * */
+                */
             case ABEONA:
-                return new MyTemplate1<>(new PIdentifier("visit-cost"), "visit-cost", new EncodedRuleParameterBinding()) {
-                    @Override
-                    public Strategy create(RuleParameterBinding rule) {
-                        return new AbeonaStrategy(rule);
-                    }
-                };
+                return new AbeonaStrategyTemplate(this);
 
             default:
                 // we can't come here
@@ -471,6 +464,22 @@ public enum StrategyValue implements ParsableValue {
                 EncodedType<T2, String> type2
         ) {
             super(StrategyValue.this, parser, name1, type1, name2, type2);
+        }
+    }
+    /**
+     * Specialised 3-parameter template that uses the strategy value's keyword, name and description.
+     */
+    abstract private class MyTemplate3<T1, T2, T3> extends TemplateN<Strategy> {
+        public MyTemplate3(
+                SerializedParser parser,
+                String name1,
+                EncodedType<T1, String> type1,
+                String name2,
+                EncodedType<T2, String> type2,
+                String name3,
+                EncodedType<T3, String> type3
+        ) {
+            super(StrategyValue.this, parser, new String[]{ name1, name2, name3 }, type1,  type2, type3);
         }
     }
 

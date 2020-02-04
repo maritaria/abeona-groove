@@ -4,25 +4,18 @@ import abeona.ExplorationEvent;
 import abeona.Query;
 import abeona.StateEvaluationEvent;
 import abeona.Transition;
-import abeona.frontiers.QueueFrontier;
-import abeona.frontiers.TreeMapFrontier;
+import abeona.behaviours.ExplorationBehaviour;
+import abeona.frontiers.Frontier;
 import abeona.heaps.Heap;
-import groove.explore.encode.abeona.RuleParameterBinding;
+import groove.explore.abeona.AbeonaHelpers;
 import groove.explore.result.Acceptor;
-import groove.grammar.Rule;
-import groove.grammar.host.ValueNode;
 import groove.lts.GTS;
 import groove.lts.GraphState;
-import groove.lts.RuleTransition;
 import groove.match.MatcherFactory;
 
-import java.util.Comparator;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Stream;
-
-import static groove.lts.Status.Flag.KNOWN;
 
 public final class AbeonaStrategy extends Strategy {
     private final Query<GraphState> query;
@@ -31,21 +24,11 @@ public final class AbeonaStrategy extends Strategy {
     private GTS gts;
     private Acceptor acceptor;
 
-    public AbeonaStrategy() {
-        final var frontier = QueueFrontier.<GraphState>lifoFrontier();
-        final var heap = new GtsHeap();
+    public AbeonaStrategy(
+            Frontier<GraphState> frontier, Heap<GraphState> heap, List<ExplorationBehaviour<GraphState>> behaviours
+    ) {
         this.query = new Query<GraphState>(frontier, heap, this::nextFunction);
-        configureQuery();
-    }
-
-    public AbeonaStrategy(RuleParameterBinding binding) {
-        if (binding == null) {
-            throw new IllegalArgumentException("binding is null");
-        }
-        final var frontier = TreeMapFrontier.<GraphState>withCollisions(this.createStateComparator(binding),
-                Objects::hashCode);
-        final var heap = new GtsHeap();
-        this.query = new Query<GraphState>(frontier, heap, this::nextFunction);
+        behaviours.forEach(this.query::addBehaviour);
         configureQuery();
     }
 
@@ -59,47 +42,6 @@ public final class AbeonaStrategy extends Strategy {
         if (acceptor.done()) {
             event.abortExploration();
         }
-    }
-
-    private Comparator<GraphState> createStateComparator(RuleParameterBinding binding) {
-        return Comparator.comparing(state -> measureStateWithRuleTransition(state, binding));
-    }
-
-    private int measureStateWithRuleTransition(GraphState state, RuleParameterBinding binding) {
-        return findRuleTransition(binding.getRule(), state).map(ruleTransition -> this.measureRuleTransition(
-                ruleTransition,
-                binding.getParameter())).orElse(Integer.MAX_VALUE);
-    }
-
-    private Optional<RuleTransition> findRuleTransition(Rule rule, GraphState state) {
-        return Stream.of(findCachedRuleTransition(rule, state), findMatchedRuleTransition(rule, state))
-                .flatMap(Function.identity())
-                .findFirst();
-    }
-
-    private Stream<RuleTransition> findCachedRuleTransition(Rule targetRule, GraphState state) {
-        return state.getRuleTransitions()
-                .stream()
-                .filter(ruleTransition -> ruleTransition.getEvent().getRule().equals(targetRule));
-    }
-
-    private Stream<RuleTransition> findMatchedRuleTransition(Rule targetRule, GraphState state) {
-        return state.getMatches()
-                .stream()
-                .filter(matchResult -> matchResult.getAction().equals(targetRule))
-                .map(matchResult -> {
-                    try {
-                        return state.applyMatch(matchResult);
-                    } catch (InterruptedException e) {
-                        return null;
-                    }
-                })
-                .filter(Objects::nonNull);
-    }
-
-    private int measureRuleTransition(RuleTransition transition, int paramNum) {
-        final var value = MinimaxStrategy.getParameter(transition, paramNum);
-        return (Integer) ((ValueNode) value).toJavaValue();
     }
 
     @Override
@@ -136,14 +78,8 @@ public final class AbeonaStrategy extends Strategy {
     }
 
     private Stream<Transition<GraphState>> nextFunction(GraphState state) {
-        return state.getMatches().stream().map(match -> {
-            try {
-                final var ruleTransition = state.applyMatch(match);
-                return new Transition<>(state, ruleTransition.target(), ruleTransition);
-            } catch (InterruptedException e) {
-                throw new RuntimeException("Exploration interrupted while applying matches", e);
-            }
-        });
+        return AbeonaHelpers.listOutgoingRuleTransitions(state)
+                .map(ruleTransition -> new Transition<>(state, ruleTransition.target(), ruleTransition));
     }
 
     private void beforeStateEvaluation(StateEvaluationEvent<GraphState> event) {
@@ -159,23 +95,5 @@ public final class AbeonaStrategy extends Strategy {
             query.getFrontier().add(Stream.of(state));
         }
         return state;
-    }
-
-    private class GtsHeap implements Heap<GraphState> {
-        @Override
-        public boolean add(GraphState graphState) {
-            return graphState.setFlag(KNOWN, true);
-        }
-
-        @Override
-        public boolean contains(GraphState graphState) {
-            return graphState.hasFlag(KNOWN);
-        }
-
-        @Override
-        public void clear() {
-            final var gts = AbeonaStrategy.this.gts;
-            gts.removeNodeSet(gts.nodeSet());
-        }
     }
 }
