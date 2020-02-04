@@ -2,8 +2,7 @@ package groove.explore.abeona.encode;
 
 import abeona.heaps.Heap;
 import abeona.heaps.NullHeap;
-import groove.explore.encode.EncodedType;
-import groove.explore.encode.EncodedTypeEditor;
+import groove.explore.encode.EncodedEnumeratedType;
 import groove.explore.prettyparse.PIdentifier;
 import groove.explore.prettyparse.SerializedParser;
 import groove.grammar.Grammar;
@@ -11,16 +10,22 @@ import groove.grammar.model.GrammarModel;
 import groove.lts.GraphState;
 import groove.util.parse.FormatException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static groove.lts.Status.Flag.KNOWN;
 
-public class EncodedHeap implements EncodedType<Heap<GraphState>, String> {
+public class EncodedHeap extends EncodedEnumeratedType<Heap<GraphState>> {
     public static SerializedParser createParser(String argName) {
         return new PIdentifier(argName);
     }
 
     @Override
-    public EncodedTypeEditor<Heap<GraphState>, String> createEditor(GrammarModel grammar) {
-        return null;
+    public Map<String, String> generateOptions(GrammarModel grammar) {
+        final var result = new HashMap<String, String>();
+        result.put("flags", "Default (flags)");
+        result.put("null", "No heap (null)");
+        return result;
     }
 
     @Override
