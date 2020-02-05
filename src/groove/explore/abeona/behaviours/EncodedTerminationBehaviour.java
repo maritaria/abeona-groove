@@ -44,7 +44,6 @@ public class EncodedTerminationBehaviour implements EncodedBehaviour {
 
     @Override
     public ExplorationBehaviour<GraphState> parse(Grammar rules, String source) throws FormatException {
-        System.out.println("EncodedTerminationBehaviour::parse '" + source + "'");
         final var parts = source.split(OPTION_SEPARATOR);
 
         if (parts.length < 1 || parts.length > 2) {

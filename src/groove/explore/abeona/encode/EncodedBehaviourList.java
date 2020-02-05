@@ -83,13 +83,11 @@ public class EncodedBehaviourList implements EncodedType<List<ExplorationBehavio
 
         @Override
         public String getCurrentValue() {
-            final var result = Arrays.stream(encoders).map(encoder -> {
+            return Arrays.stream(encoders).map(encoder -> {
                 final var editor = controlMap.get(encoder);
                 String value = editor.getCurrentValue();
                 return value.isEmpty() ? "" : encoder.getEncodingKeyword() + OPTION_SEPARATOR + value;
             }).filter(Predicate.not(String::isEmpty)).collect(Collectors.joining(BEHAVIOUR_SEPARATOR));
-            System.out.println("Serialized behaviours: " + result);
-            return result;
         }
 
         @Override

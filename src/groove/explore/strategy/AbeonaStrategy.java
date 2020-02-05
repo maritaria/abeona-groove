@@ -90,7 +90,6 @@ public final class AbeonaStrategy extends Strategy {
         // Based on ClosingStrategy::doNext
         // If a state gets evaluated while a control frame is present some of the outgoing transitions may be filtered out, as such we have to re-queue the state
         final var state = next.apply(query);
-        System.out.println("[abeona] Next state: " + state);
         if (state.getActualFrame().isTrial()) {
             query.getFrontier().add(Stream.of(state));
         }
