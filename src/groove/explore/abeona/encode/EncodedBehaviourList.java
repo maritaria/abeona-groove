@@ -16,6 +16,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.List;
 import java.util.*;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class EncodedBehaviourList implements EncodedType<List<ExplorationBehaviour<GraphState>>, String> {
@@ -82,11 +83,13 @@ public class EncodedBehaviourList implements EncodedType<List<ExplorationBehavio
 
         @Override
         public String getCurrentValue() {
-            return Arrays.stream(encoders).map(encoder -> {
+            final var result = Arrays.stream(encoders).map(encoder -> {
                 final var editor = controlMap.get(encoder);
                 String value = editor.getCurrentValue();
                 return value.isEmpty() ? "" : encoder.getEncodingKeyword() + OPTION_SEPARATOR + value;
-            }).filter(String::isEmpty).collect(Collectors.joining(BEHAVIOUR_SEPARATOR));
+            }).filter(Predicate.not(String::isEmpty)).collect(Collectors.joining(BEHAVIOUR_SEPARATOR));
+            System.out.println("Serialized behaviours: " + result);
+            return result;
         }
 
         @Override

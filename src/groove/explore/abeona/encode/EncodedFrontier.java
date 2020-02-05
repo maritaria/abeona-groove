@@ -54,7 +54,7 @@ public class EncodedFrontier implements EncodedType<Frontier<GraphState>, String
                     final var binding = parseRuleBinding(grammar, source);
                     if (binding == null) {
                         throw new FormatException(
-                                "Option 'ordered' requires a rule to be specified (ordered:<rule_name>)");
+                                "Option 'ordered' requires a rule to be specified (ordered:<rule_name>#<par_num>)");
                     }
                     return TreeMapFrontier.<GraphState>withCollisions(createStateComparator(binding),
                             Objects::hashCode);

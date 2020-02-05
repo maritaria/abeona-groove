@@ -34,7 +34,8 @@ public class EncodingHelpers {
             final var paramIndex = Integer.parseInt(pars[1]);
             final var signature = rule.getSignature().getPars();
             if (paramIndex >= signature.size()) {
-                throw new FormatException("'" + qualName + "' only has " + signature.size() + " parameters, the index " + paramIndex + " is out of range");
+                throw new FormatException("'" + qualName + "' only has " + signature
+                        .size() + " parameters, the index " + paramIndex + " is out of range");
             }
             final var param = signature.get(paramIndex);
             if (param == null) {
@@ -80,5 +81,21 @@ public class EncodingHelpers {
                 return false;
             }
         });
+    }
+
+    public static String trimPrefix(String source, String prefix) {
+        if (source.startsWith(prefix)) {
+            return source.substring(prefix.length());
+        } else {
+            return source;
+        }
+    }
+
+    public static String trimSuffix(String source, String suffix) {
+        if (source.endsWith(suffix)) {
+            return source.substring(0, source.length() - suffix.length());
+        } else {
+            return source;
+        }
     }
 }
