@@ -4,7 +4,13 @@ import groove.explore.prettyparse.*;
 import groove.grammar.Grammar;
 import groove.grammar.QualName;
 import groove.grammar.Rule;
+import groove.grammar.UnitPar;
+import groove.grammar.model.GrammarModel;
+import groove.grammar.model.ResourceKind;
+import groove.grammar.model.RuleModel;
 import groove.util.parse.FormatException;
+
+import java.util.stream.Stream;
 
 public class EncodingHelpers {
     private static final String RULE_PARAMETER_SEPARATOR = "#";
@@ -64,5 +70,15 @@ public class EncodingHelpers {
 
     public static SerializedParser createRuleParser(String argName) {
         return new PIdentifier(argName);
+    }
+
+    public static Stream<RuleModel> listRulesWithoutInputs(GrammarModel grammar) {
+        return grammar.getActiveNames(ResourceKind.RULE).stream().map(grammar::getRuleModel).filter(rule -> {
+            try {
+                return rule.getSignature().getPars().stream().noneMatch(UnitPar::isInOnly);
+            } catch (FormatException e) {
+                return false;
+            }
+        });
     }
 }

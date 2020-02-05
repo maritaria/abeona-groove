@@ -8,12 +8,22 @@ import groove.explore.abeona.AbeonaHelpers;
 import groove.explore.abeona.encode.EncodingHelpers;
 import groove.explore.encode.EncodedTypeEditor;
 import groove.grammar.Grammar;
+import groove.grammar.QualName;
 import groove.grammar.model.GrammarModel;
+import groove.grammar.model.ResourceKind;
+import groove.grammar.model.RuleModel;
+import groove.gui.util.WrapLayout;
 import groove.lts.GraphState;
 import groove.util.parse.FormatException;
 
+import javax.swing.*;
+import java.awt.*;
+import java.util.Objects;
 import java.util.WeakHashMap;
 import java.util.function.Predicate;
+
+import static groove.explore.abeona.encode.EncodedBehaviourList.OPTION_SEPARATOR;
+import static groove.explore.abeona.encode.EncodingHelpers.listRulesWithoutInputs;
 
 public class EncodedTerminationBehaviour implements EncodedBehaviour {
 
@@ -23,26 +33,30 @@ public class EncodedTerminationBehaviour implements EncodedBehaviour {
     }
 
     @Override
+    public String getDisplayLabel() {
+        return "Terminate on rule";
+    }
+
+    @Override
     public EncodedTypeEditor<ExplorationBehaviour<GraphState>, String> createEditor(GrammarModel grammar) {
-        return null;
+        return new Editor(grammar);
     }
 
     @Override
     public ExplorationBehaviour<GraphState> parse(Grammar rules, String source) throws FormatException {
         System.out.println("EncodedTerminationBehaviour::parse '" + source + "'");
-        final var parts = source.split(":");
+        final var parts = source.split(OPTION_SEPARATOR);
 
-        if (parts.length < 2 || parts.length > 3) {
-            throw new FormatException("termination behaviour needs 2 or 3 parts, found " + parts.length + " instead");
+        if (parts.length < 1 || parts.length > 2) {
+            throw new FormatException("termination behaviour needs 1 or 2 args, found " + parts.length + " instead");
         }
-        final var ruleName = parts[1];
-        final var amount = parts.length > 2 ? Integer.parseInt(parts[2]) : 1;
+        final var ruleName = parts[0];
+        final var amount = parts.length > 1 ? Integer.parseInt(parts[1]) : 1;
         if (amount <= 0) {
             throw new FormatException("termination with a threshold amount must have a positive amount (>0), but got " + amount);
         }
         final var rule = EncodingHelpers.parseRule(rules, ruleName);
-        return new ThresholdedTerminationBehaviour(
-                state -> AbeonaHelpers.findRuleTransition(rule, state).isPresent(),
+        return new ThresholdedTerminationBehaviour(state -> AbeonaHelpers.findRuleTransition(rule, state).isPresent(),
                 amount);
     }
 
@@ -68,6 +82,66 @@ public class EncodedTerminationBehaviour implements EncodedBehaviour {
                 if (updated >= threshold) {
                     event.abortExploration();
                 }
+            }
+        }
+    }
+
+    private static class Editor extends EncodedTypeEditor<ExplorationBehaviour<GraphState>, String> {
+        private final JComboBox<RuleModel> rules = new JComboBox<>();
+        private final JSpinner amount = new JSpinner();
+
+        public Editor(GrammarModel grammar) {
+            super(grammar, new WrapLayout(FlowLayout.LEFT, 0, 0));
+
+            amount.setModel(new SpinnerNumberModel(1, 1, Integer.MAX_VALUE, 1));
+            refresh();
+
+            add(rules);
+            add(amount);
+        }
+
+        @Override
+        public void refresh() {
+            final var grammar = getGrammar();
+            final var rule = getRule();
+            rules.removeAllItems();
+            listRulesWithoutInputs(grammar).forEach(rules::addItem);
+            setRule(rule);
+        }
+
+        private RuleModel getRule() {
+            return rules.getItemAt(rules.getSelectedIndex());
+        }
+
+        private void setRule(RuleModel rule) {
+            rules.setSelectedItem(rule);
+        }
+
+        private int getAmount() {
+            return (int) amount.getValue();
+        }
+
+        private void setAmount(int value) {
+            amount.setValue(value);
+        }
+
+        @Override
+        public String getCurrentValue() {
+            final var rule = getRule();
+            if (rule == null) return "";
+            return rule.getQualName() + OPTION_SEPARATOR + getAmount();
+        }
+
+        @Override
+        public void setCurrentValue(String value) {
+            if (value.isEmpty()) {
+                setRule(null);
+                setAmount(1);
+            } else {
+                final var parts = value.split(OPTION_SEPARATOR);
+                final var qname = QualName.parse(parts[0]);
+                setRule(getGrammar().getRuleModel(qname));
+                setAmount(Integer.parseInt(parts[1]));
             }
         }
     }

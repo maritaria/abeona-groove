@@ -183,7 +183,7 @@ public abstract class TemplateList<A> implements EncodedType<A,Serialized> {
      */
     private class TemplateListEditor<X> extends EncodedTypeEditor<X,Serialized>
         implements ListSelectionListener {
-
+        private final int MAX_EDITOR_WIDTH = 350;
         private final Map<String,EncodedTypeEditor<A,Serialized>> editors =
             new TreeMap<>();
         private ArrayList<String> templateKeywords;
@@ -248,7 +248,7 @@ public abstract class TemplateList<A> implements EncodedType<A,Serialized> {
             this.nameSelector.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
             this.nameSelector.setSelectedIndex(0);
             JScrollPane listScroller = new JScrollPane(this.nameSelector);
-            listScroller.setPreferredSize(new Dimension(350, 200));
+            listScroller.setPreferredSize(new Dimension(MAX_EDITOR_WIDTH, 200));
             add(listScroller);
         }
 
@@ -258,7 +258,7 @@ public abstract class TemplateList<A> implements EncodedType<A,Serialized> {
             JScrollPane infoScroller = new JScrollPane(this.infoPanel);
             infoScroller
                 .setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-            infoScroller.setPreferredSize(new Dimension(350, 200));
+            infoScroller.setPreferredSize(new Dimension(MAX_EDITOR_WIDTH, 200));
             for (String keyword : this.templateKeywords) {
                 this.infoPanel.add(this.editors.get(keyword), keyword);
             }
@@ -271,6 +271,8 @@ public abstract class TemplateList<A> implements EncodedType<A,Serialized> {
             String selectedKeyword = this.templateKeywords.get(selectedIndex);
             EncodedTypeEditor<?,?> editor = this.editors.get(selectedKeyword);
             editor.refresh();
+            editor.setMaximumSize(new Dimension(MAX_EDITOR_WIDTH, Integer.MAX_VALUE));
+            editor.invalidate();
             int editorHeight = editor.getMinimumSize().height;
             this.infoPanel.setPreferredSize(new Dimension(0, editorHeight));
             CardLayout cards = (CardLayout) (this.infoPanel.getLayout());
@@ -313,7 +315,10 @@ public abstract class TemplateList<A> implements EncodedType<A,Serialized> {
                 this.nameSelector.setSelectedIndex(this.templateKeywords.indexOf(keyword));
                 EncodedTypeEditor<?,Serialized> editor = this.editors.get(keyword);
                 editor.setCurrentValue(value);
+                editor.setMaximumSize(new Dimension(MAX_EDITOR_WIDTH, Integer.MAX_VALUE));
                 int editorHeight = editor.getMinimumSize().height;
+                editor.invalidate();
+                editorHeight = editor.getMinimumSize().height;
                 this.infoPanel.setPreferredSize(new Dimension(0, editorHeight));
                 CardLayout cards = (CardLayout) (this.infoPanel.getLayout());
                 cards.show(this.infoPanel, value.getKeyword());

@@ -6,4 +6,6 @@ import groove.lts.GraphState;
 
 public interface EncodedBehaviour extends EncodedType<ExplorationBehaviour<GraphState>, String> {
     String getEncodingKeyword();
+
+    String getDisplayLabel();
 }

@@ -1,33 +1,37 @@
 package groove.explore.abeona.encode;
 
 import abeona.behaviours.ExplorationBehaviour;
+import groove.explore.abeona.AbeonaStrategyTemplate;
+import groove.explore.abeona.behaviours.*;
 import groove.explore.encode.EncodedType;
 import groove.explore.encode.EncodedTypeEditor;
-import groove.explore.abeona.AbeonaStrategyTemplate;
-import groove.explore.abeona.behaviours.EncodedBehaviour;
-import groove.explore.abeona.behaviours.EncodedTerminationBehaviour;
-import groove.explore.prettyparse.*;
+import groove.explore.prettyparse.PAll;
+import groove.explore.prettyparse.SerializedParser;
 import groove.grammar.Grammar;
 import groove.grammar.model.GrammarModel;
 import groove.lts.GraphState;
 import groove.util.parse.FormatException;
 
-import java.util.LinkedList;
+import javax.swing.*;
+import java.awt.*;
 import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class EncodedBehaviourList implements EncodedType<List<ExplorationBehaviour<GraphState>>, String> {
     public static final String BEHAVIOUR_SEPARATOR = AbeonaStrategyTemplate.ARGUMENT_SEPARATOR;
-
-    private static final EncodedBehaviour[] encoders = new EncodedBehaviour[]{new EncodedTerminationBehaviour()};
+    public static final String OPTION_SEPARATOR = ":";
 
     public static SerializedParser createParser(String argName) {
         return new PAll(argName);
     }
 
-    @Override
-    public EncodedTypeEditor<List<ExplorationBehaviour<GraphState>>, String> createEditor(GrammarModel grammar) {
-        return null;
-    }
+    private static final EncodedBehaviour[] encoders = new EncodedBehaviour[]{
+            new EncodedTerminationBehaviour(),
+            new EncodedFrontierFilterBehaviour(),
+            new EncodedFrontierCapacityBehaviour(),
+            new EncodedDepthLimitBehaviour()
+    };
 
     @Override
     public List<ExplorationBehaviour<GraphState>> parse(Grammar rules, String source) throws FormatException {
@@ -35,10 +39,12 @@ public class EncodedBehaviourList implements EncodedType<List<ExplorationBehavio
 
         String[] parts = source.split(BEHAVIOUR_SEPARATOR);
 
-        for(String part : parts) {
+        for (String part : parts) {
             for (var encodedBehaviour : encoders) {
-                if (part.startsWith(encodedBehaviour.getEncodingKeyword())) {
-                    final var behaviour = encodedBehaviour.parse(rules, part);
+                final var keyword = encodedBehaviour.getEncodingKeyword();
+                if (part.startsWith(keyword)) {
+                    final var args = part.substring(keyword.length() + OPTION_SEPARATOR.length());
+                    final var behaviour = encodedBehaviour.parse(rules, args);
                     result.push(behaviour);
                     break;
                 }
@@ -46,5 +52,65 @@ public class EncodedBehaviourList implements EncodedType<List<ExplorationBehavio
         }
 
         return result;
+    }
+
+    @Override
+    public EncodedTypeEditor<List<ExplorationBehaviour<GraphState>>, String> createEditor(GrammarModel grammar) {
+        return new Editor(grammar);
+    }
+
+    private static class Editor extends EncodedTypeEditor<List<ExplorationBehaviour<GraphState>>, String> {
+        private final JPanel editors;
+        private final Map<EncodedBehaviour, EncodedTypeEditor<ExplorationBehaviour<GraphState>, String>> controlMap = new HashMap<>();
+
+        public Editor(GrammarModel grammar) {
+            super(grammar, new BorderLayout(0, 0));
+
+            editors = new JPanel();
+            editors.setLayout(new BoxLayout(editors, BoxLayout.Y_AXIS));
+
+            for (var encoder : encoders) {
+                final var editor = new EncodedBehaviourEditorPresenter(grammar, encoder);
+                editor.addTemplateListener(this::notifyTemplateListeners);
+                controlMap.put(encoder, editor);
+                editors.add(editor);
+            }
+
+            refresh();
+            add(editors, BorderLayout.CENTER);
+        }
+
+        @Override
+        public String getCurrentValue() {
+            return Arrays.stream(encoders).map(encoder -> {
+                final var editor = controlMap.get(encoder);
+                String value = editor.getCurrentValue();
+                return value.isEmpty() ? "" : encoder.getEncodingKeyword() + OPTION_SEPARATOR + value;
+            }).filter(String::isEmpty).collect(Collectors.joining(BEHAVIOUR_SEPARATOR));
+        }
+
+        @Override
+        public void setCurrentValue(String source) {
+            final String[] parts = source.split(BEHAVIOUR_SEPARATOR);
+            for (String part : parts) {
+                for (var encoder : encoders) {
+                    final var keyword = encoder.getEncodingKeyword();
+                    if (part.startsWith(keyword)) {
+                        final var editor = controlMap.get(encoder);
+                        final var args = part.substring(keyword.length() + OPTION_SEPARATOR.length());
+                        editor.setCurrentValue(args);
+                        break;
+                    }
+                }
+            }
+        }
+
+        @Override
+        public void refresh() {
+            for (var encoder : encoders) {
+                final var editor = controlMap.get(encoder);
+                editor.refresh();
+            }
+        }
     }
 }
