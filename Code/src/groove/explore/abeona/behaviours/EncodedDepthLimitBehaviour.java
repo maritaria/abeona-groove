@@ -97,7 +97,7 @@ public class EncodedDepthLimitBehaviour implements EncodedBehaviour {
             } else {
                 onlyCountRealSteps.setSelected(false);
             }
-            depth.setValue(remainder.isEmpty() ? 10 : Integer.parseInt(value));
+            depth.setValue(remainder.isEmpty() ? 10 : Integer.parseInt(remainder));
         }
     }
 }

@@ -6,6 +6,7 @@ import java.awt.*;
 
 /**
  * FlowLayout subclass that fully supports wrapping of components.
+ * @see <a href="http://www.camick.com/java/source/WrapLayout.java">Source: http://www.camick.com/java/source/WrapLayout.java</a>
  */
 public class WrapLayout extends FlowLayout {
     private Dimension preferredLayoutSize;

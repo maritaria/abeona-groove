@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="015cedd6-8f31-4ceb-b9f9-39fe2f4d34aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/bot-on-broken-step.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/bot-on-top-step.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/bot/ascend-5.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/bot/descend-3.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/bot/descend.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/bot/x-ascend.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/build-first.gcp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/builder-23.gst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/builder/add-missing.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/builder/finish.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/builder/next.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/builder/present.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/builder/startup.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/distance-to-top.gpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/staircase-builder.gty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/staircase.gty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/stairs-10.gst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/staircase.gps/system.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/groove-src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Ecore.ecore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arrow-open-down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arrow-open-up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arrow-simple-down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arrow-simple-left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arrow-simple-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arrow-simple-up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arrow-wide-left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arrow-wide-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cancel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/collapse-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/compass.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/contributors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/control-file.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/control-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/control-mode.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/copy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cut.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/delete.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/disable.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/e-a-choice.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edge.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edit-C.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edit-G.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edit-P.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edit-R.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edit-S.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edit-T.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edit-wide.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/edit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/enable.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/enable_unique.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/export.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/filter-lts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/findbugs_exclude_filter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/go-forward.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/go-next.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/go-previous.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/go-rewind.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/go-start.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/go-stop.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gps-compressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gps.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/graph-file.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/graph-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/graph-match.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/graph-mode.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/graph-small.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/graph.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/grid.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-blue-g-16x16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-blue-g-32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-blue-g-64x64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-blue-g-72x72.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-blue-g.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-g-16x16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-g-32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-green-g-16x16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-green-g-32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-green-g-72x72.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-green-g-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-green-g.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-red-g.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove-rule.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove.ecore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groove.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groovy-file.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/groovy-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/hand-closed-mac.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/hand-closed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/hand-open-small.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/hand-open.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/hide-lts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/import.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/layout.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/libraries.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lts-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lts-mode.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/move.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/new-C.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/new-G.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/new-P.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/new-R.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/new-T.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/new.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/open.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/paste.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pin.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/preview.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/program.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/prolog-file.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/prolog-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/properties-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/puzzle-C.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/puzzle-R.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/puzzle-mould.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/puzzle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rectangle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/redo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rename.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-condition-I.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-condition.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-file.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-forbidden-I.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-forbidden.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-invariant-I.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-invariant.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-mode.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-mould.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-property-I.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-property.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-proprty-small-multi.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-recipe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-small-multi.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-standard-I.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule-standard.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/rule.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/save.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/saveas.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/search.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/select.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-absent.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-closed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-error.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-final.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-internal-absent.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-internal.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-mode.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-open.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-result.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-start.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/state-transient.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/stixgeneralregular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/type-file.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/type-frame.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/type-mode.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/type-small.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/undo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zoomin.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zoomout.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/Imager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/ModelChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/PrologChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/Simulator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/Viewer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/AbstractBoolAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/AbstractStringAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/Algebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/AlgebraFamily.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/Algebras.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/BigBoolAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/BigIntAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/BigRealAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/BigStringAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/BoolAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/BoolSignature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/Constant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/IntAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/IntSignature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/JavaBoolAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/JavaIntAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/JavaRealAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/JavaStringAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/Operator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/PointAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/PointBoolAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/PointIntAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/PointRealAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/PointStringAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/RealAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/RealSignature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/Signature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/Sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/StringAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/StringSignature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/TermBoolAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/TermIntAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/TermRealAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/TermStringAlgebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/UnknownSymbolException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/Assignment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/CallExpr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/ExprTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/ExprTreeParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/Expression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/FieldExpr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/Parameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/Typing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/algebra/syntax/Variable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/annotation/Help.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/annotation/InfixSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/annotation/PrefixSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/annotation/Signature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/annotation/Syntax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/annotation/ToolTipBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/annotation/ToolTipHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/annotation/ToolTipPars.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/DFA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/DFAState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/MatrixAutomaton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/NodeRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/Recogniser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RegAut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RegAutCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RegEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RegExpr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RegExprCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RegExprTyper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RegFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RegNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/RelationCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/automaton/SimpleNFA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/Attempt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/Binding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/Call.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/CallStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/CtrlLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/CtrlPar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/CtrlType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/CtrlVar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/CtrlVarSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/Function.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/Procedure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/Valuator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/graph/ControlEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/graph/ControlGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/graph/ControlNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/instance/Assignment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/instance/Automaton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/instance/Frame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/instance/Step.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/instance/StepAttempt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/Ctrl.g" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/Ctrl.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlChecker.g" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlChecker.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlDoc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlTokenMaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/CtrlTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/Namespace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/parse/SymbolTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/Fragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/Relocatable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/Relocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/Switch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/SwitchAttempt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/SwitchStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/Template.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/template/TemplateBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/AtomTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/BodyTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/CallTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/DeltaTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/Derivation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/DerivationAttempt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/DerivationStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/EpsilonTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/IfTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/OrTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/SeqTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/StarTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/Term.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/TransitTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/UntilTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/control/term/WhileTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/AcceptorEnumerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/AcceptorValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/Exploration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/ExplorationListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/ExploreConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/ExploreResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/ExploreType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/ParsableValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/StrategyEnumerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/StrategyValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/Verbosity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/AbeonaHelpers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/AbeonaStrategyTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedBehaviourEditorPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedDepthLimitBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedFrontierCapacityBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedFrontierFilterBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedTerminationBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/encode/EncodedBehaviourList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/encode/EncodedFrontier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/encode/EncodedHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/encode/EncodingHelpers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/abeona/encode/RuleParameterBinding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/AcceptorKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/AlgebraKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/BooleanKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/BracketParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/CheckingKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/CountKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/DefaultSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/ExploreKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/FormulaSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/KindMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/MatchHint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/MatchKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/Null.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/Setting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/SettingKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/SettingParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/config/TraverseKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedBoundary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedEdgeMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedEnabledRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedEnumeratedType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedExplorationMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedFixedEnumeratedType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedHostName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedLtlProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedMinMaxMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedRuleFormula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedRuleList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedRuleMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/EncodedTypeEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/Serialized.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/StringEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/Template.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/TemplateList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/encode/TemplateListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/PAll.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/PChoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/PIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/PLiteral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/PNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/POptional.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/POptionalExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/PSeparated.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/PSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/SerializedParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/prettyparse/StringConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/Acceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/AnyStateAcceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/CycleAcceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/EdgeBoundCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/ExploreCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/FinalStateAcceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/IsRuleApplicableCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/NoStateAcceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/NodeBoundCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/Predicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/result/PredicateAcceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/AbeonaStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/BFSStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/Boundary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/BoundedLTLStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/BoundedPocketLTLStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/ClosingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/ConditionalBFSStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/DFSStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/ExploreStateStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/GTSStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/GraphNodeSizeBoundary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/LTLStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/LinearStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/MinimaxStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/RandomLinearStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/RemoteStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/ReteLinearStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/ReteRandomLinearStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/ReteStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/RuleSetBoundary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/Strategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/strategy/SymbolicStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/AExplorationReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/CompositeReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/ExplorationReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/GenerateProgressListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/GenerateProgressMonitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/LTSLabels.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/LTSReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/LogReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/RandomChooserInSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/RandomNewStateChooser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/StateReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/explore/util/StatisticsReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/Action.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/AnchorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/AnchorKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/Callable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/CheckPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/Condition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/DefaultAnchorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/EdgeEmbargo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/Grammar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/GrammarChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/GrammarKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/GrammarProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/ModuleName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/OracleParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/QualName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/Recipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/Rule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/RuleDependencies.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/Signature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/UnitPar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/Aspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/AspectEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/AspectElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/AspectGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/AspectKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/AspectLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/AspectNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/AspectParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/aspect/GraphConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/groovy/GraphManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/groovy/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/AnchorValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/DefaultHostEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/DefaultHostGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/DefaultHostNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/DeltaHostGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostEdgeSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostEdgeStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostEdgeTreeHashSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostGraphMorphism.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostNodeSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/HostNodeTreeHashSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/host/ValueNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/CompositeControlModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/CompositeTypeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/ConfigModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/ControlModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/GrammarModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/GraphBasedModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/GroovyModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/HostModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/NamedResourceModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/PrologModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/ResourceKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/ResourceModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/RuleModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/TextBasedModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/model/TypeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/Anchor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/AnchorKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/DefaultRuleNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/GroovyMatchChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/JavaMatchChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/LabelVar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/MatchChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/MethodName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/MethodNameParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/OperatorNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/RuleEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/RuleElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/RuleFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/RuleGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/RuleGraphMorphism.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/RuleLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/RuleNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/RuleToHostMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/Valuation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/VarMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/rule/VariableNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/ContainmentChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/ImplicitTypeGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/LabelPattern.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/Multiplicity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/MultiplicityChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/TypeChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/TypeEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/TypeElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/TypeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/TypeGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/TypeGuard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/TypeLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/grammar/type/TypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/AEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/AElementMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/AGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/ALabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/ALabelEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/ANode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/Direction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/Edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/EdgeComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/EdgeMapGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/EdgeRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/Element.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/ElementFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/ElementMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/GEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/GGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/GraphCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/GraphInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/GraphProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/GraphRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/Label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/Morphism.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/NodeComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/NodeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/NodeSetEdgeSetGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/StoreFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/TextLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/Bisimulator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/Bisimulator$Certificate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/Bisimulator$CertificateEdge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/Bisimulator$CertificateNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/Bisimulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/Bisimulator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/CertificateStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/IsoChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/PaigeTarjanMcKay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/PartitionMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/PartitionRefiner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/iso/SimplePaigeTarjanMcKay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/multi/MultiEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/multi/MultiFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/multi/MultiGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/multi/MultiLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/multi/MultiMorphism.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/multi/MultiNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/plain/PlainEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/plain/PlainFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/plain/PlainGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/plain/PlainLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/plain/PlainMorphism.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/graph/plain/PlainNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/BehaviourOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/Icons.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/Options.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/Simulator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/SimulatorHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/SimulatorListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/SimulatorModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/SimulatorUndoManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/StepHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/UserSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/Viewer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/AboutAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ActionStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ApplyMatchAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/CancelEditAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/CheckCTLAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/CheckLTLAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/CollapseAllAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/CopyAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/DeleteAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/EditAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/EditRulePropertiesAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/EditStateAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/EditSystemPropertiesAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/EnableAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/EnableUniqueAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ExecGroovyAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ExplorationDialogAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ExplorationStatsDialogAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ExploreAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ExportAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/FindReplaceAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/GotoFinalStateAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/GotoStartStateAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ImportAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/LayoutAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/LayoutDialogAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/LoadGrammarAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/LoadGrammarFromHistoryAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/LoadGrammarFromURLAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/NewAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/NewGrammarAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/PreviewControlAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/PrologFirstResultAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/PrologNextResultAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/QuitAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/RedoSimulatorAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/RefreshGrammarAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/Refreshable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/RenameAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/RenumberGrammarAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/SaveAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/SaveGrammarAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/SaveLTSAsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/SaveStateAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/SelectColorAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/SetPriorityAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/ShiftPriorityAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/SimulatorAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/SnapToGridAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/StartSimulationAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/action/UndoSimulatorAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/BoundedModelCheckingDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/BugReportDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/ConfigDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/ContributorsTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/ErrorDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/ExplorationDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/ExplorationStatsDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/ExploreConfigDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/ExploreWarningDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/FindReplaceDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/FormulaDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/FreshNameDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/GraphPreviewDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/LayoutDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/LibrariesTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/NumberDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/ProgressBarDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/PropertiesDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/PropertiesTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/SaveDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/SaveLTSAsDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/StringDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/VersionDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/ButtonEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/CheckBoxEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/ContentEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/EditorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/HelpFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/NullEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/SettingEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/SettingsPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/dialog/config/TextFieldEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/ControlDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/DismissDelayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/Display.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/DisplayKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/DisplayWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/DisplaysPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/GraphEditorTab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/GraphTab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/GroovyDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/JGraphPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/LTSDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/PrologDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/PropertiesDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/ResourceDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/ResourceTab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/RuleDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/StateDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/TabLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/TextTab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/display/TitledPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AJCell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AJEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AJVertex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AspectJCell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AspectJCellErrors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AspectJEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AspectJGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AspectJModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AspectJObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/AspectJVertex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/CtrlJEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/CtrlJGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/CtrlJVertex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JAttr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JCell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JCellViewFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JEdgeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JGraphFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JGraphLayoutCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JGraphMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JGraphUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JVertex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/JVertexView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/LTSJCell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/LTSJEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/LTSJGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/LTSJModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/LTSJVertex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/MultiLinedEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/PlainJGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/jgraph/StrokedLineBorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/AbstractLayouter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/ForestLayouter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/JCellLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/JEdgeLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/JVertexLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/LayoutKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/LayoutMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/Layouter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/LayouterItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/SpringLayouter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/layout/SpringUtilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/list/ErrorListPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/list/ListPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/list/ListTabbedPane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/list/SearchResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/list/SearchResultListPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/AdornmentValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/AspectValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/ColorValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/ConstantValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/EdgeEnd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/EdgeEndLabelValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/EdgeEndShapeValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/ErrorValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/LabelValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/Look.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/LoopRouting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/MultiLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/Values.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/VisibleValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/VisualAttributeMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/VisualKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/VisualMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/look/VisualValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/menu/ModelCheckingMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/menu/MyJMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/menu/SetLayoutMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/menu/ShowHideMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/menu/ZoomMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/AbstractResourceTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/ActionTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/CheckboxTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/DisplayTreeCellRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/DisplayTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/LabelFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/LabelTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/MatchTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/RecipeTransitionTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/RecipeTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/ResourceTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/ResourceTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/RuleLevelTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/RuleTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/RuleTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/StateTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/TypeFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/tree/TypeTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/gui/util/WrapLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/ExtensionFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/FileType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/GrooveFileChooser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/GrooveFileView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/HTMLConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/Imager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/AbstractionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/Acceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/Field.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/Id.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/Identifiable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/InstanceModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/Name.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/Timer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/Triple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/TypeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/ConfigAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/ConfigDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/ConfigSchema.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/ConfigurationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/JaxFrontDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/Configuration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/EdgeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/EnumModeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/EnumType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/Global.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/GraphType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/IdModeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/IndexType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/InstanceModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/IntermediateNameType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/IntermediateWhenType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/LiteralsType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/ModeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/NullableType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/ObjectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/OrderType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/RepresentationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/StringsType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/TypeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/configuration/schema/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/graph/AbsEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/graph/AbsGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/graph/AbsNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ExportException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ExportableResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ImportException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/InstanceExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/InstanceImporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/InvalidTypeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/Messenger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/TypeExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/TypeImporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ecore/EcoreResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ecore/EcoreToInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ecore/EcoreToType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ecore/EcoreUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ecore/InstanceToEcore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/ecore/TypeToEcore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/graphviz/GraphvizResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/graphviz/GraphvizToInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/graphviz/GraphvizUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/graphviz/InstanceToGraphviz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/graphviz/TypeToGraphviz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/ConstraintToGroove.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrammarDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrammarGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrammarVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GraphNodeTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrooveResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrooveToConstraint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrooveToInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrooveToMeta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrooveToType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/GrooveUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/InstanceToGroove.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/MetaToGroove.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/groove/TypeToGroove.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/gxl/GxlResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/gxl/GxlToInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/gxl/GxlToType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/gxl/GxlUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/gxl/InstanceToGxl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/gxl/TypeToGxl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/lang/gxl/gxl-1.0.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/property/AbstractProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/property/ContainmentProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/property/DefaultValueProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/property/IdentityProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/property/KeysetProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/property/OppositeProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/property/Property.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/BoolType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/Class.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/Container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/CustomDataType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/DataType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/Enum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/IntType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/RealType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/StringType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/Tuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/type/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/BoolValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/ContainerValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/CustomDataValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/EnumValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/IntValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/LiteralValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/Object.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/RealValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/StringValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/TupleValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/conceptual/value/Value.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/AbstractExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/ConceptualPorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/Exportable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/Exporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/Exporters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/Importer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/Importers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/PortException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/Porter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/AutPorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/ColImporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/DotPorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/EcorePorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/FsmExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/GxlPorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/NativePorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/RasterExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/TikzExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/format/VectorExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/util/GraphToEPS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/util/GraphToPDF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/util/GraphToTikz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/util/GraphToVector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/util/PdfDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/util/TeXLineFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/external/util/TikzStylesExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/AttrEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/AttrFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/AttrGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/AttrNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/AttrTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/AutIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/ColIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/ConceptualIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/GraphIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/GxlIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/LayoutIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/graph/PriorityFileName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/store/EditType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/io/store/SystemStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/AbstractGraphState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/AbstractRuleTransitionStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/ActionLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/DefaultGraphNextState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/DefaultRuleTransition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/ExploreData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/Filter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GTSChangeListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GTSCounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GTSListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GraphNextState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GraphState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GraphTransition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GraphTransitionKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/GraphTransitionStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/IdentityTransitionStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/MatchApplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/MatchCollector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/MatchResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/MatchResultSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/RecipeEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/RecipeTransition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/RuleTransition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/RuleTransitionLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/RuleTransitionStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/StartGraphState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/StateCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/StateMatches.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/StateReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/lts/SymmetryTransitionStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/Matcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/MatcherFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/SearchEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/SearchStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/TreeMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/item.lts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/AbstractSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/ConditionSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/Edge2SearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/EqualitySearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/NegatedSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/NodeTypeSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/OperatorNodeSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/PlanSearchEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/PlanSearchStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/RegExprEdgeSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/SearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/SearchPlan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/SeedSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/ValueNodeSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/plan/VarEdgeSearchItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/AbstractPathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/AbstractReteMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/AtomPathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ChoicePathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ClosurePathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/CompositeConditionChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ConditionChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/DataOperatorChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/DefaultNodeChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/DisconnectedSubgraphChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/DominoEventListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/EdgeCheckerNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/EmptyPathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/InversionPathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/JoinStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/LookupEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/LookupTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/NegativeFilterSubgraphCheckerNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/NodeChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/PathCheckerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ProductionNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/QuantifierCountChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/QuantifierCountSubgraphChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ReteNetwork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ReteNetworkNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/RetePathMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ReteSearchEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ReteSearchStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ReteSimpleMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ReteStateSubscriber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ReteTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/RootNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/SequenceOperatorPathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/SingleEdgePathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/SubgraphCheckerNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/ValueNodeChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/match/rete/WildcardEdgePathChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/GrooveEnvironment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/GrooveState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/PrologChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/PrologEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/QueryResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/QueryReturnValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/AlgebraPredicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/GraphPredicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/GroovePredicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/LtsPredicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/RulePredicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/TransPredicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/TypePredicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/algebra/AlgebraPrologCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/algebra/Predicate_convert_valuenode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/algebra/Predicate_is_valuenode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/GraphPrologCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_edge_label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_edge_role_binary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_edge_role_flag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_edge_role_node_type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_edge_source.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_edge_target.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_graph_edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_graph_edge_count.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_graph_edge_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_graph_node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_graph_node_count.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_graph_node_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_is_edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_is_graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_is_node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_label_edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_label_edge_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_node_edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_node_edge_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_node_number.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_node_out_edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_node_out_edge_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_node_self_edges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_node_self_edges_excl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_save_graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_show_graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_start_graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/graph/Predicate_start_graph_name.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/LtsPrologCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_active_state.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_final_state.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_final_state_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_gts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_is_gts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_is_state.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_is_transition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_start_state.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_state.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_state_graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_state_is_closed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_state_next.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_state_next_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_state_ruleevent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_state_transition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_state_transition_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_transition_event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_transition_match.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_transition_source.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/lts/Predicate_transition_target.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/rule/Predicate_is_rule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/rule/Predicate_rule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/rule/Predicate_rule_lhs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/rule/Predicate_rule_name.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/rule/Predicate_rule_priority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/rule/Predicate_rule_rhs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_active_ruleevent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_is_ruleevent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_is_rulematch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_ruleevent_label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_ruleevent_match.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_ruleevent_rule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_ruleevent_transpose.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_rulematch_edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_rulematch_node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/Predicate_rulematch_rule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/trans/TransPrologCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/type/Predicate_composite_type_graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/type/Predicate_direct_subtype.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/type/Predicate_label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/type/Predicate_subtype.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/builtin/type/Predicate_type_graph_name.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/exception/GroovePrologException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/exception/GroovePrologLoadingException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/util/PrologStringCollectionIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/util/PrologTokenMaker.flex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/util/PrologTokenMaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/util/PrologUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/util/TermConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/util/groove-functors.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/util/prolog-functors.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/prolog/util/prolog-syntax.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/Gate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/GeneralizedGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/InteractionVariable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/LocationVariable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/RuleInspector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/STS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/STSException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/SwitchRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/sts/Variable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/AbstractRuleEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/BasicEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/CompositeEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/DefaultDeltaApplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/DeltaApplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/DeltaStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/DeltaTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/FrozenDeltaApplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/MergeMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/Proof.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/Record.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/RuleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/RuleEffect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/RuleEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/RuleEventSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/StoredDeltaApplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/Transformer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/criticalpair/ConfluenceAnalyzer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/criticalpair/ConfluenceResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/criticalpair/ConfluenceStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/criticalpair/CriticalPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/criticalpair/HostGraphWithMorphism.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/criticalpair/LazyCriticalPairSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/criticalpair/OrderedCriticalPairSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/criticalpair/ParallelPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/DefaultOracle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/DialogOracle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/NoValueOracle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/RandomOracle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/RandomOracleFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/ReaderOracle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/ReaderOracleFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/ValueOracle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/ValueOracleFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/transform/oracle/ValueOracleKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/ChangeCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Colors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/DefaultDispenser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/DefaultFixable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Dispenser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/DocumentedEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Duo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Exceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Fixable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/GraphReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Groove.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/History.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Keywords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/NoNonNull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/NodeShape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/OperatorLister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Properties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Property.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/PropertyKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Quad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Reporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/ShowFonts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/SingleDispenser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Strings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/ThreadPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/ThreeValued.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Triple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Unzipper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Version.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Version.java.back" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/antlr/AntlrGrapher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/antlr/ParseInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/antlr/ParseTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/antlr/ParseTreeAdaptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cache/AbstractCacheHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cache/CacheHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cache/CacheReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cli/DirectoryHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cli/ExistingFileHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cli/GrammarHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cli/GrooveCmdLineParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cli/GrooveCmdLineTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cli/HelpHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/cli/VerbosityHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/AbstractNestedIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/Bag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/Chain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/CollectionOfCollections.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/CollectionView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/Comparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/DeltaSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/Equator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/FilterIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/HashBag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/HashIntSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/IntSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/KeyPartition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/KeySet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/ListComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/MapSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/NestedIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/ObservableSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/Pool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/SetOfDisjointSets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/SetView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/SmallCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/StackedSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/TransformCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/TransformIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/TransformMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/TransformSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/TreeBag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/TreeHashSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/TreeIntSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/UncasedStringMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/UnmodifiableCollectionView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/collect/UnmodifiableSetView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/line/HTMLLineFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/line/Line.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/line/LineFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/line/LineStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/line/StringFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/AExprTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/AExprTreeParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/ATermTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/ATermTreeParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/DefaultOp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/Fallible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/FormatChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/FormatError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/FormatErrorSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/FormatException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/IdValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/NullParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/Op.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/OpKind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/ParsableKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/StringHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/util/parse/StringParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/BuchiGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/BuchiLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/BuchiLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/BuchiTransition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/CTLMarker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/CTLModelChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/Formula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/FormulaParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/Logic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/LogicOp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/ModelChecking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/ProductListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/ProductState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/ProductStateSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/ProductTransition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groove/verify/Proposition.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="groove-src" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Bram\IdeaProjects\groove-src\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RHcfwixyd8fZi0TuOK9t6kO34A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15424974" />
+    <property name="project.structure.side.proportion" value="0.34739456" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="groove.benchmark" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="groove.explore.encode.abeona" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bram\IdeaProjects\groove-src\.idea" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Benchmarks">
+    <configuration name="Benchmarks" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="groove.benchmark.Benchmarks" />
+      <module name="groove-src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Simulator" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="groove.Simulator" />
+      <module name="groove-src" />
+      <option name="PROGRAM_PARAMETERS" value="$ProjectFileDir$\grammars\leader-election" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bench-abeona-bfs" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="groove.explore.Generator" />
+      <module name="groove-src" />
+      <option name="PROGRAM_PARAMETERS" value="$ProjectFileDir$\grammars\leader-election -s abeona:&quot;fifo,flags,&quot; -a ruleapp:hasLeader -r 1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bench-groove-bfs" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="groove.explore.Generator" />
+      <module name="groove-src" />
+      <option name="PROGRAM_PARAMETERS" value="$ProjectFileDir$\grammars\leader-election -s bfs -a ruleapp:hasLeader -r 1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="explore-cli" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="groove.explore.Generator" />
+      <module name="groove-src" />
+      <option name="PROGRAM_PARAMETERS" value="$ProjectFileDir$\grammars\staircase -s abeona:&quot;ordered:distance-to-top#0,flags,termination:distance-to-top:2,filter:distance-to-top&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.explore-cli" />
+      <item itemvalue="Application.bench-abeona-bfs" />
+      <item itemvalue="Application.bench-groove-bfs" />
+      <item itemvalue="Application.Simulator" />
+      <item itemvalue="Application.Benchmarks" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="015cedd6-8f31-4ceb-b9f9-39fe2f4d34aa" name="Default Changelist" comment="" />
+      <created>1569327568995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569327568995</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Original code + integration progress">
+      <created>1579008206292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579008206293</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implemented configurable rule binding for ordered frontier">
+      <created>1580295023334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580295023334</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated the abeona strategy description">
+      <created>1580297543547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580297543547</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added staircase example">
+      <created>1580297728600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580297728600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented basic abeona query parsing from commandline&#10;Moved abeona additions in groove.explore package under in new package:&#10;groove.explore.abeona">
+      <created>1580828208055</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580828208055</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implemented editor for EncodedHeap">
+      <created>1580828565488</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580828565488</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed POptionalExtension not implementing toParsableString correctly">
+      <created>1580834697085</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580834697085</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added some more behaviour encodings">
+      <created>1580908872984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580908872984</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added some more behaviour encodings">
+      <created>1580909172722</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580909172722</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added ability to limit depth only on real (non recipe) transitions">
+      <created>1580910750231</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1580910750231</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Removed leftover logging">
+      <created>1580910928486</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1580910928486</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added report file">
+      <created>1585229105418</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585229105418</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Original code + integration progress" />
+    <MESSAGE value="Implemented configurable rule binding for ordered frontier" />
+    <MESSAGE value="Updated the abeona strategy description" />
+    <MESSAGE value="Added staircase example" />
+    <MESSAGE value="Implemented basic abeona query parsing from commandline&#10;Moved abeona additions in groove.explore package under in new package:&#10;groove.explore.abeona" />
+    <MESSAGE value="Implemented editor for EncodedHeap" />
+    <MESSAGE value="Fixed POptionalExtension not implementing toParsableString correctly" />
+    <MESSAGE value="Added some more behaviour encodings" />
+    <MESSAGE value="Added ability to limit depth only on real (non recipe) transitions" />
+    <MESSAGE value="Removed leftover logging" />
+    <MESSAGE value="Added report file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added report file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="29" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/groove/explore/encode/Template.java</url>
+          <line>313</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedTerminationBehaviour.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedFrontierFilterBehaviour.java</url>
+          <line>77</line>
+          <log-expression expression="&quot;getCurrentValue: &quot; + rule" language="JAVA" />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/src/groove/explore/abeona/behaviours/EncodedFrontierFilterBehaviour.java</url>
+          <line>82</line>
+          <log-expression expression="&quot;setCurrentValue: &quot; + value" language="JAVA" />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
